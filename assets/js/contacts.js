@@ -41,13 +41,15 @@ function submitForm(e, formName) {
 
     $.ajax({
         type: "POST",
-        url: 'mail.php',
+        url: 'https://formspree.io/f/xayaopzw',
         data: formData,
         success: function () {
+            alert('Sent');
             console.log('success');
             //...
         },
         error: function () {
+            alert('Oops! There is an error');
             console.log('error');
             //...
         }
